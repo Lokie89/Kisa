@@ -30,7 +30,7 @@
 세션통제, 입력데이터 검증 및 표현, 보안기능, 시간 및 상태, 에러처리, 코드오류, 캡슐화, API 오용
 #### API
  응용프로그램 개발 시 도와주는 인터페이스 Application Programming Interface
-# 123. 배치 프로그램
+# 124. 배치 프로그램
 사용자와 상호작용하지 않고 여러 작업들을 정해진 순서대로 처리하는 프로그램<br>
 정기배치 : 기간, 이벤트성 배치 : 조건, on-demand 배치 : 요청<br>
 필수 요소 : 대용량 데이터, 자동화, 견고성, 안정성, 신뢰성, 성능
@@ -40,9 +40,6 @@
 Job : 작업, Job Launcher : 실행 인터페이스, Step : 제어정보 : Job Repository : 정보저장
 ##### Quartz
 Scheduler : 환경관리, Job : 작업, Job detail : 작업정보, Trigger : 스케줄 정리
-
-
-
 ### 기출문제 틀림
     5. 개발 언어 선정시 고려해야 하는 기준에 속하지 않는 특성은?
         a. 안정성 b. 효율성 c. 친밀성 d. 적정성
@@ -59,6 +56,38 @@ Scheduler : 환경관리, Job : 작업, Job detail : 작업정보, Trigger : 스
         원활히 동작되는지 확인하는 소프트웨어 개발 보안 점검 항목은?
         ( 시간 및 상태 )
          
+# 126. 데이터 타입
+#### C / C++ 데이터 타입
+    문자      char        1Byte
+    정수      short       2Byte
+    정수      int         4Byte
+    정수      long        4Byte
+    정수      long long   8Byte
+    실수      float       4Byte
+    실수      double      8Byte
+    실수      long double 8Byte
     
+    부호없는 타입 - unsigned 타입명 - 크기 같음
+    
+#### JAVA 데이터 타입
+    문자      char        2Byte
+    정수      byte        1Byte
+    정수      short       2Byte
+    정수      int         4Byte
+    정수      long        8Byte
+    실수      float       4Byte
+    실수      double      8Byte
+    논리      boolean     1Byte  
 
+# 127. 변수
+컴퓨터가 명령을 처리하는 도중 발생하는 값을 저장하기 위한 공간
+#### 기억 클래스
+##### 변수 선언 시 메모리 내에 변수의 값을 저장하기 위한 기억영역이 할당되는데, 기억영역에 따라 사용범위의 제한이 있음
+    자동 변수       메모리(스택)      auto        일시적
+    레지스터 변수    레지스터         register    일시적
+    정적 변수       메모리(데이터)    static      영구적
+    외부 변수       메모리(데이터)    extern      영구적
+###### 레지스터 변수는 메모리가 아닌 CPU 내부의 레지스터에 할당되는 변수
+###### 처리속도를 높이기위해 존재하며 메모리 주소를 가질수 없다.
 
+ 
